@@ -1,7 +1,6 @@
 import csv
-
-from graphviz import Digraph
 import os
+from graphviz import Digraph
 
 
 class Weapon:
