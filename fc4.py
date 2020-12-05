@@ -20,6 +20,7 @@ class Weapon:
     def __gt__(self, other):
         return other < self
 
+
 # Read CSV and convert to list of weapons
 def read_weapons(filename):
     with (open(filename)) as file:
