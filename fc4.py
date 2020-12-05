@@ -54,7 +54,7 @@ def build_graph_for_file(filename):
 def transitive_reduction(name):
     tred_command = 'tred {name}.dot > {name}.reduced.dot'.format(name=name)
     os.system(tred_command)
-    pdf_command = 'dot -Tpdf {name}.reduced.dot -o {name}.reduced.pdf'.format(name=name)
+    pdf_command = 'dot -Tpng {name}.reduced.dot -o {name}.reduced.png'.format(name=name)
     os.system(pdf_command)
 
 
